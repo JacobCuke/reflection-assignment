@@ -16,4 +16,30 @@ SuperClass: ClassC
 		SuperClass: java.lang.Object
 			CLASS
 			Class: java.lang.Object
+			INTERFACES ( java.lang.Object )
+			Interfaces-> NONE
+		INTERFACES ( ClassD )
+		Interfaces-> NONE
+	INTERFACES ( ClassC )
+	Interfaces-> 
+	 INTERFACE -> Recursively Inspect
+	 InterfaceA
+		CLASS
+		Class: InterfaceA
+		INTERFACES ( InterfaceA )
+		Interfaces-> 
+		 INTERFACE -> Recursively Inspect
+		 InterfaceB
+			CLASS
+			Class: InterfaceB
+			INTERFACES ( InterfaceB )
+			Interfaces-> NONE
+INTERFACES ( ClassB )
+Interfaces-> 
+ INTERFACE -> Recursively Inspect
+ java.lang.Runnable
+	CLASS
+	Class: java.lang.Runnable
+	INTERFACES ( java.lang.Runnable )
+	Interfaces-> NONE
 ======================================================

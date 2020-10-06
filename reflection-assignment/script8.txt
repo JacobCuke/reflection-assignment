@@ -8,4 +8,26 @@ SUPERCLASS -> Recursively Inspect
 SuperClass: java.lang.Object
 	CLASS
 	Class: java.lang.Object
+	INTERFACES ( java.lang.Object )
+	Interfaces-> NONE
+INTERFACES ( java.lang.String )
+Interfaces-> 
+ INTERFACE -> Recursively Inspect
+ java.io.Serializable
+	CLASS
+	Class: java.io.Serializable
+	INTERFACES ( java.io.Serializable )
+	Interfaces-> NONE
+ INTERFACE -> Recursively Inspect
+ java.lang.Comparable
+	CLASS
+	Class: java.lang.Comparable
+	INTERFACES ( java.lang.Comparable )
+	Interfaces-> NONE
+ INTERFACE -> Recursively Inspect
+ java.lang.CharSequence
+	CLASS
+	Class: java.lang.CharSequence
+	INTERFACES ( java.lang.CharSequence )
+	Interfaces-> NONE
 ======================================================

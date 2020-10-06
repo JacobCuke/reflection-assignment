@@ -8,4 +8,20 @@ SUPERCLASS -> Recursively Inspect
 SuperClass: java.lang.Object
 	CLASS
 	Class: java.lang.Object
+	INTERFACES ( java.lang.Object )
+	Interfaces-> NONE
+INTERFACES ( [LClassB; )
+Interfaces-> 
+ INTERFACE -> Recursively Inspect
+ java.lang.Cloneable
+	CLASS
+	Class: java.lang.Cloneable
+	INTERFACES ( java.lang.Cloneable )
+	Interfaces-> NONE
+ INTERFACE -> Recursively Inspect
+ java.io.Serializable
+	CLASS
+	Class: java.io.Serializable
+	INTERFACES ( java.io.Serializable )
+	Interfaces-> NONE
 ======================================================

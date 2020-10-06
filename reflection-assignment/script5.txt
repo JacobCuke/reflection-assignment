@@ -8,4 +8,8 @@ SUPERCLASS -> Recursively Inspect
 SuperClass: java.lang.Object
 	CLASS
 	Class: java.lang.Object
+	INTERFACES ( java.lang.Object )
+	Interfaces-> NONE
+INTERFACES ( ClassD )
+Interfaces-> NONE
 ======================================================
