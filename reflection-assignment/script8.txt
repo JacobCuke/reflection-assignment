@@ -931,5 +931,361 @@ Fields->
   Name: CASE_INSENSITIVE_ORDER
   Type: interface java.util.Comparator
   Modifiers: public static final
-  Value: java.lang.String$CaseInsensitiveComparator@677327b6
+  Value (ref): java.lang.String$CaseInsensitiveComparator@677327b6
+    -> Recursively inspect
+	CLASS
+	Class: java.lang.String$CaseInsensitiveComparator
+	SUPERCLASS -> Recursively Inspect
+	SuperClass: java.lang.Object
+		CLASS
+		Class: java.lang.Object
+		INTERFACES ( java.lang.Object )
+		Interfaces-> NONE
+		CONSTRUCTORS ( java.lang.Object )
+		Constructors-> 
+		 CONSTRUCTOR
+		  Name: java.lang.Object
+		  Parameter types-> NONE
+		  Modifiers: public
+		METHODS ( java.lang.Object )
+		Methods-> 
+		 METHOD
+		  Name: finalize
+		  Exceptions-> 
+		   java.lang.Throwable
+		  Parameter types-> NONE
+		  Return type: void
+		  Modifiers: protected
+		 METHOD
+		  Name: wait
+		  Exceptions-> 
+		   java.lang.InterruptedException
+		  Parameter types-> 
+		   long
+		   int
+		  Return type: void
+		  Modifiers: public final
+		 METHOD
+		  Name: wait
+		  Exceptions-> 
+		   java.lang.InterruptedException
+		  Parameter types-> 
+		   long
+		  Return type: void
+		  Modifiers: public final native
+		 METHOD
+		  Name: wait
+		  Exceptions-> 
+		   java.lang.InterruptedException
+		  Parameter types-> NONE
+		  Return type: void
+		  Modifiers: public final
+		 METHOD
+		  Name: equals
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   class java.lang.Object
+		  Return type: boolean
+		  Modifiers: public
+		 METHOD
+		  Name: toString
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: class java.lang.String
+		  Modifiers: public
+		 METHOD
+		  Name: hashCode
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: int
+		  Modifiers: public native
+		 METHOD
+		  Name: getClass
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: class java.lang.Class
+		  Modifiers: public final native
+		 METHOD
+		  Name: clone
+		  Exceptions-> 
+		   java.lang.CloneNotSupportedException
+		  Parameter types-> NONE
+		  Return type: class java.lang.Object
+		  Modifiers: protected native
+		 METHOD
+		  Name: registerNatives
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: void
+		  Modifiers: private static native
+		 METHOD
+		  Name: notify
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: void
+		  Modifiers: public final native
+		 METHOD
+		  Name: notifyAll
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: void
+		  Modifiers: public final native
+		FIELDS ( java.lang.Object )
+		Fields-> NONE
+	INTERFACES ( java.lang.String$CaseInsensitiveComparator )
+	Interfaces-> 
+	 INTERFACE -> Recursively Inspect
+	 java.util.Comparator
+		CLASS
+		Class: java.util.Comparator
+		INTERFACES ( java.util.Comparator )
+		Interfaces-> NONE
+		CONSTRUCTORS ( java.util.Comparator )
+		Constructors-> NONE
+		METHODS ( java.util.Comparator )
+		Methods-> 
+		 METHOD
+		  Name: equals
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   class java.lang.Object
+		  Return type: boolean
+		  Modifiers: public abstract
+		 METHOD
+		  Name: compare
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: public abstract
+		 METHOD
+		  Name: reversed
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparing
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.Function
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparing
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.Function
+		   interface java.util.Comparator
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparing
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.Comparator
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparingInt
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToIntFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparingLong
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToLongFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: thenComparingDouble
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToDoubleFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public
+		 METHOD
+		  Name: reverseOrder
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: naturalOrder
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: nullsFirst
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.Comparator
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: nullsLast
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.Comparator
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: comparing
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.Function
+		   interface java.util.Comparator
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: comparing
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.Function
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: comparingInt
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToIntFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: comparingLong
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToLongFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: comparingDouble
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToDoubleFunction
+		  Return type: interface java.util.Comparator
+		  Modifiers: public static
+		 METHOD
+		  Name: $deserializeLambda$
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   class java.lang.invoke.SerializedLambda
+		  Return type: class java.lang.Object
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$comparingDouble$8dcf42ea$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToDoubleFunction
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$comparingLong$6043328a$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToLongFunction
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$comparingInt$7b0bb60$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.ToIntFunction
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$comparing$77a9974f$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.function.Function
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$comparing$ea9a8b3a$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.Comparator
+		   interface java.util.function.Function
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private static
+		 METHOD
+		  Name: lambda$thenComparing$36697e65$1
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   interface java.util.Comparator
+		   class java.lang.Object
+		   class java.lang.Object
+		  Return type: int
+		  Modifiers: private
+		FIELDS ( java.util.Comparator )
+		Fields-> NONE
+	 INTERFACE -> Recursively Inspect
+	 java.io.Serializable
+		CLASS
+		Class: java.io.Serializable
+		INTERFACES ( java.io.Serializable )
+		Interfaces-> NONE
+		CONSTRUCTORS ( java.io.Serializable )
+		Constructors-> NONE
+		METHODS ( java.io.Serializable )
+		Methods-> NONE
+		FIELDS ( java.io.Serializable )
+		Fields-> NONE
+	CONSTRUCTORS ( java.lang.String$CaseInsensitiveComparator )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: java.lang.String$CaseInsensitiveComparator
+	  Parameter types-> 
+	   class java.lang.String$1
+	  Modifiers: 
+	 CONSTRUCTOR
+	  Name: java.lang.String$CaseInsensitiveComparator
+	  Parameter types-> NONE
+	  Modifiers: private
+	METHODS ( java.lang.String$CaseInsensitiveComparator )
+	Methods-> 
+	 METHOD
+	  Name: compare
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   class java.lang.Object
+	   class java.lang.Object
+	  Return type: int
+	  Modifiers: public volatile
+	 METHOD
+	  Name: compare
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   class java.lang.String
+	   class java.lang.String
+	  Return type: int
+	  Modifiers: public
+	 METHOD
+	  Name: readResolve
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.Object
+	  Modifiers: private
+	FIELDS ( java.lang.String$CaseInsensitiveComparator )
+	Fields-> 
+	 FIELD
+	  Name: serialVersionUID
+	  Type: long
+	  Modifiers: private static final
+	  Value: 8575799808933029326
 ======================================================
