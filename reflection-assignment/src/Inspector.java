@@ -22,14 +22,34 @@ public class Inspector {
     	
     	this.depth = depth;
     	
+    	// Class Name
     	println("CLASS");
     	println("Class: " + c.getName());
     	
+    	// Immediate SuperClass
     	Class superclass = c.getSuperclass();
     	if (superclass != null) {
     		println("SUPERCLASS -> Recursively Inspect");
         	println("SuperClass: " + superclass.getName());
         	inspectClass(superclass, obj, recursive, depth+1);
+        	this.depth = depth;
+    	}
+    	
+    	// Interfaces
+    	println("INTERFACES ( " + c.getName() + " )");
+    	print("Interfaces-> ");
+    	Class[] interfaces = c.getInterfaces();
+    	if (interfaces.length == 0) {
+    		System.out.println("NONE");
+    	}
+    	else {
+    		System.out.println();
+    		for (Class i : interfaces) {
+    			println(" INTERFACE -> Recursively Inspect");
+    			println(" " + i.getName());
+    			inspectClass(i, null, recursive, depth+1);
+    			this.depth = depth;
+    		}
     	}
     	
     }
@@ -39,6 +59,13 @@ public class Inspector {
     		System.out.print("\t");
     	}
     	System.out.println(string);
+    }
+    
+    private void print(String string) {
+    	for (int i = 0; i < depth; i++) {
+    		System.out.print("\t");
+    	}
+    	System.out.print(string);
     }
 
 }
