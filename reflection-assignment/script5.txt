@@ -14,19 +14,116 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
-	  Parameter types: None
+	  Parameter types-> NONE
 	  Modifiers: public
+	METHODS ( java.lang.Object )
+	Methods-> 
+	 METHOD
+	  Name: finalize
+	  Exceptions-> 
+	   java.lang.Throwable
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: protected
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	   int
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: equals
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   class java.lang.Object
+	  Return type: boolean
+	  Modifiers: public
+	 METHOD
+	  Name: toString
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.String
+	  Modifiers: public
+	 METHOD
+	  Name: hashCode
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: int
+	  Modifiers: public native
+	 METHOD
+	  Name: getClass
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.Class
+	  Modifiers: public final native
+	 METHOD
+	  Name: clone
+	  Exceptions-> 
+	   java.lang.CloneNotSupportedException
+	  Parameter types-> NONE
+	  Return type: class java.lang.Object
+	  Modifiers: protected native
+	 METHOD
+	  Name: registerNatives
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: private static native
+	 METHOD
+	  Name: notify
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: notifyAll
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
 INTERFACES ( ClassD )
 Interfaces-> NONE
 CONSTRUCTORS ( ClassD )
 Constructors-> 
  CONSTRUCTOR
   Name: ClassD
-  Parameter types: None
+  Parameter types-> NONE
   Modifiers: public
  CONSTRUCTOR
   Name: ClassD
-  Parameter types: 
+  Parameter types-> 
    int
+  Modifiers: public
+METHODS ( ClassD )
+Methods-> 
+ METHOD
+  Name: toString
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: class java.lang.String
+  Modifiers: public
+ METHOD
+  Name: getVal3
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: int
   Modifiers: public
 ======================================================

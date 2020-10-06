@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@4e25154f
+Running Test: [[LClassB;@7d4991ad
 Recursive: true
 CLASS
 Class: [[LClassB;
@@ -14,8 +14,91 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
-	  Parameter types: None
+	  Parameter types-> NONE
 	  Modifiers: public
+	METHODS ( java.lang.Object )
+	Methods-> 
+	 METHOD
+	  Name: finalize
+	  Exceptions-> 
+	   java.lang.Throwable
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: protected
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	   int
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: equals
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   class java.lang.Object
+	  Return type: boolean
+	  Modifiers: public
+	 METHOD
+	  Name: toString
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.String
+	  Modifiers: public
+	 METHOD
+	  Name: hashCode
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: int
+	  Modifiers: public native
+	 METHOD
+	  Name: getClass
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.Class
+	  Modifiers: public final native
+	 METHOD
+	  Name: clone
+	  Exceptions-> 
+	   java.lang.CloneNotSupportedException
+	  Parameter types-> NONE
+	  Return type: class java.lang.Object
+	  Modifiers: protected native
+	 METHOD
+	  Name: registerNatives
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: private static native
+	 METHOD
+	  Name: notify
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: notifyAll
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
 INTERFACES ( [[LClassB; )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -26,6 +109,8 @@ Interfaces->
 	Interfaces-> NONE
 	CONSTRUCTORS ( java.lang.Cloneable )
 	Constructors-> NONE
+	METHODS ( java.lang.Cloneable )
+	Methods-> NONE
  INTERFACE -> Recursively Inspect
  java.io.Serializable
 	CLASS
@@ -34,6 +119,10 @@ Interfaces->
 	Interfaces-> NONE
 	CONSTRUCTORS ( java.io.Serializable )
 	Constructors-> NONE
+	METHODS ( java.io.Serializable )
+	Methods-> NONE
 CONSTRUCTORS ( [[LClassB; )
 Constructors-> NONE
+METHODS ( [[LClassB; )
+Methods-> NONE
 ======================================================

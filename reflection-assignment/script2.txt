@@ -14,8 +14,91 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
-	  Parameter types: None
+	  Parameter types-> NONE
 	  Modifiers: public
+	METHODS ( java.lang.Object )
+	Methods-> 
+	 METHOD
+	  Name: finalize
+	  Exceptions-> 
+	   java.lang.Throwable
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: protected
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	   int
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> 
+	   long
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: wait
+	  Exceptions-> 
+	   java.lang.InterruptedException
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final
+	 METHOD
+	  Name: equals
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   class java.lang.Object
+	  Return type: boolean
+	  Modifiers: public
+	 METHOD
+	  Name: toString
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.String
+	  Modifiers: public
+	 METHOD
+	  Name: hashCode
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: int
+	  Modifiers: public native
+	 METHOD
+	  Name: getClass
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.Class
+	  Modifiers: public final native
+	 METHOD
+	  Name: clone
+	  Exceptions-> 
+	   java.lang.CloneNotSupportedException
+	  Parameter types-> NONE
+	  Return type: class java.lang.Object
+	  Modifiers: protected native
+	 METHOD
+	  Name: registerNatives
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: private static native
+	 METHOD
+	  Name: notify
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
+	 METHOD
+	  Name: notifyAll
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public final native
 INTERFACES ( ClassA )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -26,6 +109,8 @@ Interfaces->
 	Interfaces-> NONE
 	CONSTRUCTORS ( java.io.Serializable )
 	Constructors-> NONE
+	METHODS ( java.io.Serializable )
+	Methods-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.Runnable
 	CLASS
@@ -34,15 +119,57 @@ Interfaces->
 	Interfaces-> NONE
 	CONSTRUCTORS ( java.lang.Runnable )
 	Constructors-> NONE
+	METHODS ( java.lang.Runnable )
+	Methods-> 
+	 METHOD
+	  Name: run
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public abstract
 CONSTRUCTORS ( ClassA )
 Constructors-> 
  CONSTRUCTOR
   Name: ClassA
-  Parameter types: None
+  Parameter types-> NONE
   Modifiers: public
  CONSTRUCTOR
   Name: ClassA
-  Parameter types: 
+  Parameter types-> 
    int
+  Modifiers: public
+METHODS ( ClassA )
+Methods-> 
+ METHOD
+  Name: getVal
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: int
+  Modifiers: public
+ METHOD
+  Name: printSomething
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: void
+  Modifiers: private
+ METHOD
+  Name: run
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: void
+  Modifiers: public
+ METHOD
+  Name: toString
+  Exceptions-> NONE
+  Parameter types-> NONE
+  Return type: class java.lang.String
+  Modifiers: public
+ METHOD
+  Name: setVal
+  Exceptions-> 
+   java.lang.Exception
+  Parameter types-> 
+   int
+  Return type: void
   Modifiers: public
 ======================================================
