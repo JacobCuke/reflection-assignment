@@ -10,6 +10,12 @@ SuperClass: java.lang.Object
 	Class: java.lang.Object
 	INTERFACES ( java.lang.Object )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Object )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: java.lang.Object
+	  Parameter types: None
+	  Modifiers: public
 INTERFACES ( ClassA )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -18,10 +24,25 @@ Interfaces->
 	Class: java.io.Serializable
 	INTERFACES ( java.io.Serializable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.io.Serializable )
+	Constructors-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.Runnable
 	CLASS
 	Class: java.lang.Runnable
 	INTERFACES ( java.lang.Runnable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Runnable )
+	Constructors-> NONE
+CONSTRUCTORS ( ClassA )
+Constructors-> 
+ CONSTRUCTOR
+  Name: ClassA
+  Parameter types: None
+  Modifiers: public
+ CONSTRUCTOR
+  Name: ClassA
+  Parameter types: 
+   int
+  Modifiers: public
 ======================================================

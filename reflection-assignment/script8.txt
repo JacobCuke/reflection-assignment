@@ -10,6 +10,12 @@ SuperClass: java.lang.Object
 	Class: java.lang.Object
 	INTERFACES ( java.lang.Object )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Object )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: java.lang.Object
+	  Parameter types: None
+	  Modifiers: public
 INTERFACES ( java.lang.String )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -18,16 +24,122 @@ Interfaces->
 	Class: java.io.Serializable
 	INTERFACES ( java.io.Serializable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.io.Serializable )
+	Constructors-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.Comparable
 	CLASS
 	Class: java.lang.Comparable
 	INTERFACES ( java.lang.Comparable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Comparable )
+	Constructors-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.CharSequence
 	CLASS
 	Class: java.lang.CharSequence
 	INTERFACES ( java.lang.CharSequence )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.CharSequence )
+	Constructors-> NONE
+CONSTRUCTORS ( java.lang.String )
+Constructors-> 
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   int
+   int
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   class java.nio.charset.Charset
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   class java.lang.String
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   int
+   int
+   class java.nio.charset.Charset
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   int
+   int
+   class java.lang.String
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [C
+   boolean
+  Modifiers: 
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class java.lang.StringBuilder
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class java.lang.StringBuffer
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [I
+   int
+   int
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: None
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [C
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class java.lang.String
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [C
+   int
+   int
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   int
+  Modifiers: public
+ CONSTRUCTOR
+  Name: java.lang.String
+  Parameter types: 
+   class [B
+   int
+   int
+   int
+  Modifiers: public
 ======================================================

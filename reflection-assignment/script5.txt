@@ -10,6 +10,23 @@ SuperClass: java.lang.Object
 	Class: java.lang.Object
 	INTERFACES ( java.lang.Object )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Object )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: java.lang.Object
+	  Parameter types: None
+	  Modifiers: public
 INTERFACES ( ClassD )
 Interfaces-> NONE
+CONSTRUCTORS ( ClassD )
+Constructors-> 
+ CONSTRUCTOR
+  Name: ClassD
+  Parameter types: None
+  Modifiers: public
+ CONSTRUCTOR
+  Name: ClassD
+  Parameter types: 
+   int
+  Modifiers: public
 ======================================================

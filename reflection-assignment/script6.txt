@@ -10,6 +10,12 @@ SuperClass: java.lang.Object
 	Class: java.lang.Object
 	INTERFACES ( java.lang.Object )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Object )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: java.lang.Object
+	  Parameter types: None
+	  Modifiers: public
 INTERFACES ( [LClassB; )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -18,10 +24,16 @@ Interfaces->
 	Class: java.lang.Cloneable
 	INTERFACES ( java.lang.Cloneable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Cloneable )
+	Constructors-> NONE
  INTERFACE -> Recursively Inspect
  java.io.Serializable
 	CLASS
 	Class: java.io.Serializable
 	INTERFACES ( java.io.Serializable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.io.Serializable )
+	Constructors-> NONE
+CONSTRUCTORS ( [LClassB; )
+Constructors-> NONE
 ======================================================

@@ -18,8 +18,25 @@ SuperClass: ClassC
 			Class: java.lang.Object
 			INTERFACES ( java.lang.Object )
 			Interfaces-> NONE
+			CONSTRUCTORS ( java.lang.Object )
+			Constructors-> 
+			 CONSTRUCTOR
+			  Name: java.lang.Object
+			  Parameter types: None
+			  Modifiers: public
 		INTERFACES ( ClassD )
 		Interfaces-> NONE
+		CONSTRUCTORS ( ClassD )
+		Constructors-> 
+		 CONSTRUCTOR
+		  Name: ClassD
+		  Parameter types: None
+		  Modifiers: public
+		 CONSTRUCTOR
+		  Name: ClassD
+		  Parameter types: 
+		   int
+		  Modifiers: public
 	INTERFACES ( ClassC )
 	Interfaces-> 
 	 INTERFACE -> Recursively Inspect
@@ -34,6 +51,22 @@ SuperClass: ClassC
 			Class: InterfaceB
 			INTERFACES ( InterfaceB )
 			Interfaces-> NONE
+			CONSTRUCTORS ( InterfaceB )
+			Constructors-> NONE
+		CONSTRUCTORS ( InterfaceA )
+		Constructors-> NONE
+	CONSTRUCTORS ( ClassC )
+	Constructors-> 
+	 CONSTRUCTOR
+	  Name: ClassC
+	  Parameter types: None
+	  Modifiers: public
+	 CONSTRUCTOR
+	  Name: ClassC
+	  Parameter types: 
+	   int
+	   int
+	  Modifiers: public
 INTERFACES ( ClassB )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -42,4 +75,12 @@ Interfaces->
 	Class: java.lang.Runnable
 	INTERFACES ( java.lang.Runnable )
 	Interfaces-> NONE
+	CONSTRUCTORS ( java.lang.Runnable )
+	Constructors-> NONE
+CONSTRUCTORS ( ClassB )
+Constructors-> 
+ CONSTRUCTOR
+  Name: ClassB
+  Parameter types: None
+  Modifiers: public
 ======================================================
