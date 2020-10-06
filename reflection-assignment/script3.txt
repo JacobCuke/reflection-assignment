@@ -107,6 +107,8 @@ SuperClass: ClassC
 			  Parameter types-> NONE
 			  Return type: void
 			  Modifiers: public final native
+			FIELDS ( java.lang.Object )
+			Fields-> NONE
 		INTERFACES ( ClassD )
 		Interfaces-> NONE
 		CONSTRUCTORS ( ClassD )
@@ -123,17 +125,39 @@ SuperClass: ClassC
 		METHODS ( ClassD )
 		Methods-> 
 		 METHOD
-		  Name: toString
-		  Exceptions-> NONE
-		  Parameter types-> NONE
-		  Return type: class java.lang.String
-		  Modifiers: public
-		 METHOD
 		  Name: getVal3
 		  Exceptions-> NONE
 		  Parameter types-> NONE
 		  Return type: int
 		  Modifiers: public
+		 METHOD
+		  Name: toString
+		  Exceptions-> NONE
+		  Parameter types-> NONE
+		  Return type: class java.lang.String
+		  Modifiers: public
+		FIELDS ( ClassD )
+		Fields-> 
+		 FIELD
+		  Name: val
+		  Type: class ClassA
+		  Modifiers: private
+		  Value: ClassA
+		 FIELD
+		  Name: val2
+		  Type: class ClassA
+		  Modifiers: private static
+		  Value: null
+		 FIELD
+		  Name: val3
+		  Type: int
+		  Modifiers: private
+		  Value: 34
+		 FIELD
+		  Name: vallarray
+		  Type: class [LClassA;
+		  Modifiers: private
+		  Component Type: class ClassA
 	INTERFACES ( ClassC )
 	Interfaces-> 
 	 INTERFACE -> Recursively Inspect
@@ -161,6 +185,8 @@ SuperClass: ClassC
 			   boolean
 			  Return type: void
 			  Modifiers: public abstract
+			FIELDS ( InterfaceB )
+			Fields-> NONE
 		CONSTRUCTORS ( InterfaceA )
 		Constructors-> NONE
 		METHODS ( InterfaceA )
@@ -186,6 +212,8 @@ SuperClass: ClassC
 		   class java.lang.String
 		  Return type: int
 		  Modifiers: public abstract
+		FIELDS ( InterfaceA )
+		Fields-> NONE
 	CONSTRUCTORS ( ClassC )
 	Constructors-> 
 	 CONSTRUCTOR
@@ -201,18 +229,6 @@ SuperClass: ClassC
 	METHODS ( ClassC )
 	Methods-> 
 	 METHOD
-	  Name: run
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: public
-	 METHOD
-	  Name: toString
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: class java.lang.String
-	  Modifiers: public
-	 METHOD
 	  Name: func1
 	  Exceptions-> 
 	   java.lang.Exception
@@ -222,16 +238,6 @@ SuperClass: ClassC
 	   boolean
 	   class java.lang.String
 	  Return type: void
-	  Modifiers: public
-	 METHOD
-	  Name: func2
-	  Exceptions-> 
-	   java.lang.Exception
-	   java.lang.ArithmeticException
-	   java.lang.IllegalMonitorStateException
-	  Parameter types-> 
-	   class java.lang.String
-	  Return type: int
 	  Modifiers: public
 	 METHOD
 	  Name: func0
@@ -249,6 +255,45 @@ SuperClass: ClassC
 	   int
 	  Return type: void
 	  Modifiers: public abstract
+	 METHOD
+	  Name: func2
+	  Exceptions-> 
+	   java.lang.Exception
+	   java.lang.ArithmeticException
+	   java.lang.IllegalMonitorStateException
+	  Parameter types-> 
+	   class java.lang.String
+	  Return type: int
+	  Modifiers: public
+	 METHOD
+	  Name: run
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: void
+	  Modifiers: public
+	 METHOD
+	  Name: toString
+	  Exceptions-> NONE
+	  Parameter types-> NONE
+	  Return type: class java.lang.String
+	  Modifiers: public
+	FIELDS ( ClassC )
+	Fields-> 
+	 FIELD
+	  Name: val2
+	  Type: class ClassA
+	  Modifiers: private
+	  Value: ClassA
+	 FIELD
+	  Name: val3
+	  Type: class ClassA
+	  Modifiers: private
+	  Value: ClassA
+	 FIELD
+	  Name: val4
+	  Type: class ClassA
+	  Modifiers: private
+	  Value: ClassA
 INTERFACES ( ClassB )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -267,6 +312,8 @@ Interfaces->
 	  Parameter types-> NONE
 	  Return type: void
 	  Modifiers: public abstract
+	FIELDS ( java.lang.Runnable )
+	Fields-> NONE
 CONSTRUCTORS ( ClassB )
 Constructors-> 
  CONSTRUCTOR
@@ -275,6 +322,13 @@ Constructors->
   Modifiers: public
 METHODS ( ClassB )
 Methods-> 
+ METHOD
+  Name: func3
+  Exceptions-> NONE
+  Parameter types-> 
+   int
+  Return type: void
+  Modifiers: public
  METHOD
   Name: run
   Exceptions-> NONE
@@ -287,11 +341,21 @@ Methods->
   Parameter types-> NONE
   Return type: class java.lang.String
   Modifiers: public
- METHOD
-  Name: func3
-  Exceptions-> NONE
-  Parameter types-> 
-   int
-  Return type: void
-  Modifiers: public
+FIELDS ( ClassB )
+Fields-> 
+ FIELD
+  Name: val
+  Type: class ClassA
+  Modifiers: private
+  Value: ClassA
+ FIELD
+  Name: val2
+  Type: class ClassA
+  Modifiers: private
+  Value: ClassA
+ FIELD
+  Name: val3
+  Type: class ClassA
+  Modifiers: private
+  Value: null
 ======================================================

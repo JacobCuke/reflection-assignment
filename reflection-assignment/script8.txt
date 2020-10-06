@@ -99,6 +99,8 @@ SuperClass: java.lang.Object
 	  Parameter types-> NONE
 	  Return type: void
 	  Modifiers: public final native
+	FIELDS ( java.lang.Object )
+	Fields-> NONE
 INTERFACES ( java.lang.String )
 Interfaces-> 
  INTERFACE -> Recursively Inspect
@@ -111,6 +113,8 @@ Interfaces->
 	Constructors-> NONE
 	METHODS ( java.io.Serializable )
 	Methods-> NONE
+	FIELDS ( java.io.Serializable )
+	Fields-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.Comparable
 	CLASS
@@ -128,6 +132,8 @@ Interfaces->
 	   class java.lang.Object
 	  Return type: int
 	  Modifiers: public abstract
+	FIELDS ( java.lang.Comparable )
+	Fields-> NONE
  INTERFACE -> Recursively Inspect
  java.lang.CharSequence
 	CLASS
@@ -189,6 +195,8 @@ Interfaces->
 	  Parameter types-> NONE
 	  Return type: interface java.util.Spliterator$OfInt
 	  Modifiers: private
+	FIELDS ( java.lang.CharSequence )
+	Fields-> NONE
 CONSTRUCTORS ( java.lang.String )
 Constructors-> 
  CONSTRUCTOR
@@ -882,4 +890,31 @@ Methods->
   Parameter types-> NONE
   Return type: class java.lang.String
   Modifiers: public native
+FIELDS ( java.lang.String )
+Fields-> 
+ FIELD
+  Name: value
+  Type: class [C
+  Modifiers: private final
+  Component Type: char
+ FIELD
+  Name: hash
+  Type: int
+  Modifiers: private
+  Value: 0
+ FIELD
+  Name: serialVersionUID
+  Type: long
+  Modifiers: private static final
+  Value: -6849794470754667710
+ FIELD
+  Name: serialPersistentFields
+  Type: class [Ljava.io.ObjectStreamField;
+  Modifiers: private static final
+  Component Type: class java.io.ObjectStreamField
+ FIELD
+  Name: CASE_INSENSITIVE_ORDER
+  Type: interface java.util.Comparator
+  Modifiers: public static final
+  Value: java.lang.String$CaseInsensitiveComparator@677327b6
 ======================================================
