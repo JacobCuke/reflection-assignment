@@ -1,0 +1,11 @@
+======================================================
+Filename: script5.txt
+Running Test: ClassD
+Recursive: true
+CLASS
+Class: ClassD
+SUPERCLASS -> Recursively Inspect
+SuperClass: java.lang.Object
+	CLASS
+	Class: java.lang.Object
+======================================================
