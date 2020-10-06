@@ -167,9 +167,22 @@ public class Inspector {
 						// Component type
 						println("  Component Type: " + valueClass.getComponentType());
 						// Length
+						println("  Length: " + Array.getLength(value));
 						// Entries
+						print("  Entries-> ");
+						if (Array.getLength(value) == 0) {
+							System.out.println("NONE");
+							continue;
+						}
+						System.out.println();
+						for (int i = 0; i < Array.getLength(value); i++) {
+							println("   Value: " + Array.get(value, i));
+						}
 						continue;
-					} 
+					}
+					
+					// Check if value is a reference to an object
+					// Recurse
 					
 					print("  Value: ");
 					System.out.println(value);
