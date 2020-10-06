@@ -134,6 +134,54 @@ public class Inspector {
     		}
     	}
     	
+    	// Fields
+    	println("FIELDS ( " + c.getName() + " )");
+    	print("Fields-> ");
+    	Field[] fields = c.getDeclaredFields();
+    	if (fields.length == 0) {
+    		System.out.println("NONE");
+    	} 
+    	else {
+    		System.out.println();
+    		for (Field f : fields) {
+    			println(" FIELD");
+    			println("  Name: " + f.getName());
+    			println("  Type: " + f.getType());
+    			
+    			// Modifiers
+    			print("  Modifiers: ");
+    			int modifiers = f.getModifiers();
+    			System.out.println(Modifier.toString(modifiers));
+    			
+    			// Value
+    			f.setAccessible(true);
+    			try {
+					Object value = f.get(obj);
+					if (value == null) {
+						println("  Value: " + value);
+						continue;
+					}
+					Class valueClass = value.getClass();
+					
+					if (valueClass.isArray()) {
+						// Component type
+						println("  Component Type: " + valueClass.getComponentType());
+						// Length
+						// Entries
+						continue;
+					} 
+					
+					print("  Value: ");
+					System.out.println(value);
+					
+				} catch (IllegalArgumentException e) {
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					e.printStackTrace();
+				}
+    		}
+    	}
+    	
     }
     
     private void println(String string) {
