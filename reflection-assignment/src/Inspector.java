@@ -52,6 +52,39 @@ public class Inspector {
     		}
     	}
     	
+    	// Constructors
+    	println("CONSTRUCTORS ( " + c.getName() + " )");
+    	print("Constructors-> ");
+    	Constructor[] constructors = c.getDeclaredConstructors();
+    	if (constructors.length == 0) {
+    		System.out.println("NONE");
+    	}
+    	else {
+    		System.out.println();
+    		for (Constructor con : constructors) {
+    			println(" CONSTRUCTOR");
+    			println("  Name: " + con.getName());
+    			
+    			// Parameter types
+    			print("  Parameter types: ");
+    			Parameter[] parameters = con.getParameters();
+    			if (parameters.length == 0) { 
+    				System.out.println("None");
+    			}
+    			else {
+    				System.out.println();
+    				for (Parameter p : parameters) {
+    					println("   " + p.getType());
+    				}
+    			}
+    			
+    			// Modifiers
+    			print("  Modifiers: ");
+    			int modifiers = con.getModifiers();
+    			System.out.println(Modifier.toString(modifiers));
+    		}
+    	}
+    	
     }
     
     private void println(String string) {
