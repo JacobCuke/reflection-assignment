@@ -150,4 +150,16 @@ Fields->
   Type: class [LClassA;
   Modifiers: private
   Component Type: class ClassA
+  Length: 10
+  Entries-> 
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
 ======================================================

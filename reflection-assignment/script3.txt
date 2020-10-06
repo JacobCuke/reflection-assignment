@@ -158,6 +158,18 @@ SuperClass: ClassC
 		  Type: class [LClassA;
 		  Modifiers: private
 		  Component Type: class ClassA
+		  Length: 10
+		  Entries-> 
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
 	INTERFACES ( ClassC )
 	Interfaces-> 
 	 INTERFACE -> Recursively Inspect
@@ -192,6 +204,16 @@ SuperClass: ClassC
 		METHODS ( InterfaceA )
 		Methods-> 
 		 METHOD
+		  Name: func2
+		  Exceptions-> 
+		   java.lang.Exception
+		   java.lang.ArithmeticException
+		   java.lang.IllegalMonitorStateException
+		  Parameter types-> 
+		   class java.lang.String
+		  Return type: int
+		  Modifiers: public abstract
+		 METHOD
 		  Name: func1
 		  Exceptions-> 
 		   java.lang.Exception
@@ -201,16 +223,6 @@ SuperClass: ClassC
 		   boolean
 		   class java.lang.String
 		  Return type: void
-		  Modifiers: public abstract
-		 METHOD
-		  Name: func2
-		  Exceptions-> 
-		   java.lang.Exception
-		   java.lang.ArithmeticException
-		   java.lang.IllegalMonitorStateException
-		  Parameter types-> 
-		   class java.lang.String
-		  Return type: int
 		  Modifiers: public abstract
 		FIELDS ( InterfaceA )
 		Fields-> NONE
@@ -229,6 +241,25 @@ SuperClass: ClassC
 	METHODS ( ClassC )
 	Methods-> 
 	 METHOD
+	  Name: func0
+	  Exceptions-> 
+	   java.lang.Exception
+	  Parameter types-> 
+	   int
+	   boolean
+	  Return type: void
+	  Modifiers: public
+	 METHOD
+	  Name: func2
+	  Exceptions-> 
+	   java.lang.Exception
+	   java.lang.ArithmeticException
+	   java.lang.IllegalMonitorStateException
+	  Parameter types-> 
+	   class java.lang.String
+	  Return type: int
+	  Modifiers: public
+	 METHOD
 	  Name: func1
 	  Exceptions-> 
 	   java.lang.Exception
@@ -240,31 +271,12 @@ SuperClass: ClassC
 	  Return type: void
 	  Modifiers: public
 	 METHOD
-	  Name: func0
-	  Exceptions-> 
-	   java.lang.Exception
-	  Parameter types-> 
-	   int
-	   boolean
-	  Return type: void
-	  Modifiers: public
-	 METHOD
 	  Name: func3
 	  Exceptions-> NONE
 	  Parameter types-> 
 	   int
 	  Return type: void
 	  Modifiers: public abstract
-	 METHOD
-	  Name: func2
-	  Exceptions-> 
-	   java.lang.Exception
-	   java.lang.ArithmeticException
-	   java.lang.IllegalMonitorStateException
-	  Parameter types-> 
-	   class java.lang.String
-	  Return type: int
-	  Modifiers: public
 	 METHOD
 	  Name: run
 	  Exceptions-> NONE

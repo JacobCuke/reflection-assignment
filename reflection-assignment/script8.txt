@@ -897,6 +897,19 @@ Fields->
   Type: class [C
   Modifiers: private final
   Component Type: char
+  Length: 11
+  Entries-> 
+   Value: T
+   Value: e
+   Value: s
+   Value: t
+   Value:  
+   Value: S
+   Value: t
+   Value: r
+   Value: i
+   Value: n
+   Value: g
  FIELD
   Name: hash
   Type: int
@@ -912,6 +925,8 @@ Fields->
   Type: class [Ljava.io.ObjectStreamField;
   Modifiers: private static final
   Component Type: class java.io.ObjectStreamField
+  Length: 0
+  Entries-> NONE
  FIELD
   Name: CASE_INSENSITIVE_ORDER
   Type: interface java.util.Comparator
