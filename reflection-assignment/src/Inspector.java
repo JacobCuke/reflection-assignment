@@ -181,8 +181,18 @@ public class Inspector {
 						continue;
 					}
 					
-					// Check if value is a reference to an object
-					// Recurse
+					// Check if value is a reference to an object and recurse
+					if (!f.getType().isPrimitive()) {
+						
+						print("  Value (ref): ");
+						System.out.println(value);
+						println("    -> Recursively inspect");
+						
+						if (recursive) {
+							inspectClass(valueClass, value, recursive, depth+1);
+						}
+						continue;
+					}
 					
 					print("  Value: ");
 					System.out.println(value);
