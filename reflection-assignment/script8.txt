@@ -931,7 +931,7 @@ Fields->
   Name: CASE_INSENSITIVE_ORDER
   Type: interface java.util.Comparator
   Modifiers: public static final
-  Value (ref): java.lang.String$CaseInsensitiveComparator@4554617c
+  Value (ref): java.lang.String$CaseInsensitiveComparator@77846d2c
     -> Recursively inspect
 	CLASS
 	Class: java.lang.String$CaseInsensitiveComparator
