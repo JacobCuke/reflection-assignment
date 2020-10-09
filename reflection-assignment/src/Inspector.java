@@ -26,6 +26,44 @@ public class Inspector {
     	println("CLASS");
     	println("Class: " + c.getName());
     	
+    	if (c.isArray()) {
+    		// Component type
+			println(" Component Type: " + c.getComponentType());
+			// Length
+			println(" Length: " + Array.getLength(obj));
+			// Entries
+			print(" Entries-> ");
+			if (Array.getLength(obj) == 0) {
+				System.out.println("NONE");
+				return;
+			}
+			System.out.println();
+			
+			for (int i = 0; i < Array.getLength(obj); i++) {
+				Object entry = Array.get(obj, i);
+				
+				if (entry == null) {
+					println("  Value: " + entry);
+					continue;
+				}
+				
+				if (!c.getComponentType().isPrimitive()) {
+					print("  Value (ref): ");
+					System.out.println(entry);
+					
+					if (recursive) {
+						println("    -> Recursively inspect");
+						inspectClass(entry.getClass(), entry, recursive, depth+1);
+						this.depth = depth;
+					}
+					continue;
+				}
+				
+				println("   Value: " + Array.get(obj, i));
+			}
+			return;
+    	}
+    	
     	// Immediate SuperClass
     	Class superclass = c.getSuperclass();
     	if (superclass != null) {

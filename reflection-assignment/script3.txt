@@ -337,33 +337,33 @@ SuperClass: ClassC
 			  Type: boolean
 			  Modifiers: private
 			  Value: true
-			 FIELD
-			  Name: val2
-			  Type: class ClassA
-			  Modifiers: private static
-			  Value: null
-			 FIELD
-			  Name: val3
-			  Type: int
-			  Modifiers: private
-			  Value: 34
-			 FIELD
-			  Name: vallarray
-			  Type: class [LClassA;
-			  Modifiers: private
-			  Component Type: class ClassA
-			  Length: 10
-			  Entries-> 
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
-			   Value: null
+		 FIELD
+		  Name: val2
+		  Type: class ClassA
+		  Modifiers: private static
+		  Value: null
+		 FIELD
+		  Name: val3
+		  Type: int
+		  Modifiers: private
+		  Value: 34
+		 FIELD
+		  Name: vallarray
+		  Type: class [LClassA;
+		  Modifiers: private
+		  Component Type: class ClassA
+		  Length: 10
+		  Entries-> 
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
+		  Value: null
 	INTERFACES ( ClassC )
 	Interfaces-> 
 	 INTERFACE -> Recursively Inspect
@@ -684,12 +684,12 @@ SuperClass: ClassC
 		  Type: boolean
 		  Modifiers: private
 		  Value: true
-		 FIELD
-		  Name: val3
-		  Type: class ClassA
-		  Modifiers: private
-		  Value (ref): ClassA
-		    -> Recursively inspect
+	 FIELD
+	  Name: val3
+	  Type: class ClassA
+	  Modifiers: private
+	  Value (ref): ClassA
+	    -> Recursively inspect
 		CLASS
 		Class: ClassA
 		SUPERCLASS -> Recursively Inspect
@@ -883,12 +883,12 @@ SuperClass: ClassC
 		  Type: boolean
 		  Modifiers: private
 		  Value: true
-		 FIELD
-		  Name: val4
-		  Type: class ClassA
-		  Modifiers: private
-		  Value (ref): ClassA
-		    -> Recursively inspect
+	 FIELD
+	  Name: val4
+	  Type: class ClassA
+	  Modifiers: private
+	  Value (ref): ClassA
+	    -> Recursively inspect
 		CLASS
 		Class: ClassA
 		SUPERCLASS -> Recursively Inspect
@@ -1330,12 +1330,12 @@ Fields->
 	  Type: boolean
 	  Modifiers: private
 	  Value: true
-	 FIELD
-	  Name: val2
-	  Type: class ClassA
-	  Modifiers: private
-	  Value (ref): ClassA
-	    -> Recursively inspect
+ FIELD
+  Name: val2
+  Type: class ClassA
+  Modifiers: private
+  Value (ref): ClassA
+    -> Recursively inspect
 	CLASS
 	Class: ClassA
 	SUPERCLASS -> Recursively Inspect
@@ -1529,9 +1529,9 @@ Fields->
 	  Type: boolean
 	  Modifiers: private
 	  Value: true
-	 FIELD
-	  Name: val3
-	  Type: class ClassA
-	  Modifiers: private
-	  Value: null
+ FIELD
+  Name: val3
+  Type: class ClassA
+  Modifiers: private
+  Value: null
 ======================================================

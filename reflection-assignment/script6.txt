@@ -4,133 +4,19 @@ Running Test: [LClassB;@232204a1
 Recursive: true
 CLASS
 Class: [LClassB;
-SUPERCLASS -> Recursively Inspect
-SuperClass: java.lang.Object
-	CLASS
-	Class: java.lang.Object
-	INTERFACES ( java.lang.Object )
-	Interfaces-> NONE
-	CONSTRUCTORS ( java.lang.Object )
-	Constructors-> 
-	 CONSTRUCTOR
-	  Name: java.lang.Object
-	  Parameter types-> NONE
-	  Modifiers: public
-	METHODS ( java.lang.Object )
-	Methods-> 
-	 METHOD
-	  Name: finalize
-	  Exceptions-> 
-	   java.lang.Throwable
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: protected
-	 METHOD
-	  Name: wait
-	  Exceptions-> 
-	   java.lang.InterruptedException
-	  Parameter types-> 
-	   long
-	   int
-	  Return type: void
-	  Modifiers: public final
-	 METHOD
-	  Name: wait
-	  Exceptions-> 
-	   java.lang.InterruptedException
-	  Parameter types-> 
-	   long
-	  Return type: void
-	  Modifiers: public final native
-	 METHOD
-	  Name: wait
-	  Exceptions-> 
-	   java.lang.InterruptedException
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: public final
-	 METHOD
-	  Name: equals
-	  Exceptions-> NONE
-	  Parameter types-> 
-	   class java.lang.Object
-	  Return type: boolean
-	  Modifiers: public
-	 METHOD
-	  Name: toString
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: class java.lang.String
-	  Modifiers: public
-	 METHOD
-	  Name: hashCode
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: int
-	  Modifiers: public native
-	 METHOD
-	  Name: getClass
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: class java.lang.Class
-	  Modifiers: public final native
-	 METHOD
-	  Name: clone
-	  Exceptions-> 
-	   java.lang.CloneNotSupportedException
-	  Parameter types-> NONE
-	  Return type: class java.lang.Object
-	  Modifiers: protected native
-	 METHOD
-	  Name: registerNatives
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: private static native
-	 METHOD
-	  Name: notify
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: public final native
-	 METHOD
-	  Name: notifyAll
-	  Exceptions-> NONE
-	  Parameter types-> NONE
-	  Return type: void
-	  Modifiers: public final native
-	FIELDS ( java.lang.Object )
-	Fields-> NONE
-INTERFACES ( [LClassB; )
-Interfaces-> 
- INTERFACE -> Recursively Inspect
- java.lang.Cloneable
-	CLASS
-	Class: java.lang.Cloneable
-	INTERFACES ( java.lang.Cloneable )
-	Interfaces-> NONE
-	CONSTRUCTORS ( java.lang.Cloneable )
-	Constructors-> NONE
-	METHODS ( java.lang.Cloneable )
-	Methods-> NONE
-	FIELDS ( java.lang.Cloneable )
-	Fields-> NONE
- INTERFACE -> Recursively Inspect
- java.io.Serializable
-	CLASS
-	Class: java.io.Serializable
-	INTERFACES ( java.io.Serializable )
-	Interfaces-> NONE
-	CONSTRUCTORS ( java.io.Serializable )
-	Constructors-> NONE
-	METHODS ( java.io.Serializable )
-	Methods-> NONE
-	FIELDS ( java.io.Serializable )
-	Fields-> NONE
-CONSTRUCTORS ( [LClassB; )
-Constructors-> NONE
-METHODS ( [LClassB; )
-Methods-> NONE
-FIELDS ( [LClassB; )
-Fields-> NONE
+ Component Type: class ClassB
+ Length: 12
+ Entries-> 
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
+  Value: null
 ======================================================
