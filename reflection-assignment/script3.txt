@@ -398,6 +398,16 @@ SuperClass: ClassC
 		METHODS ( InterfaceA )
 		Methods-> 
 		 METHOD
+		  Name: func2
+		  Exceptions-> 
+		   java.lang.Exception
+		   java.lang.ArithmeticException
+		   java.lang.IllegalMonitorStateException
+		  Parameter types-> 
+		   class java.lang.String
+		  Return type: int
+		  Modifiers: public abstract
+		 METHOD
 		  Name: func1
 		  Exceptions-> 
 		   java.lang.Exception
@@ -407,16 +417,6 @@ SuperClass: ClassC
 		   boolean
 		   class java.lang.String
 		  Return type: void
-		  Modifiers: public abstract
-		 METHOD
-		  Name: func2
-		  Exceptions-> 
-		   java.lang.Exception
-		   java.lang.ArithmeticException
-		   java.lang.IllegalMonitorStateException
-		  Parameter types-> 
-		   class java.lang.String
-		  Return type: int
 		  Modifiers: public abstract
 		FIELDS ( InterfaceA )
 		Fields-> NONE
@@ -435,6 +435,27 @@ SuperClass: ClassC
 	METHODS ( ClassC )
 	Methods-> 
 	 METHOD
+	  Name: func2
+	  Exceptions-> 
+	   java.lang.Exception
+	   java.lang.ArithmeticException
+	   java.lang.IllegalMonitorStateException
+	  Parameter types-> 
+	   class java.lang.String
+	  Return type: int
+	  Modifiers: public
+	 METHOD
+	  Name: func1
+	  Exceptions-> 
+	   java.lang.Exception
+	  Parameter types-> 
+	   int
+	   double
+	   boolean
+	   class java.lang.String
+	  Return type: void
+	  Modifiers: public
+	 METHOD
 	  Name: func3
 	  Exceptions-> NONE
 	  Parameter types-> 
@@ -449,27 +470,6 @@ SuperClass: ClassC
 	   int
 	   boolean
 	  Return type: void
-	  Modifiers: public
-	 METHOD
-	  Name: func1
-	  Exceptions-> 
-	   java.lang.Exception
-	  Parameter types-> 
-	   int
-	   double
-	   boolean
-	   class java.lang.String
-	  Return type: void
-	  Modifiers: public
-	 METHOD
-	  Name: func2
-	  Exceptions-> 
-	   java.lang.Exception
-	   java.lang.ArithmeticException
-	   java.lang.IllegalMonitorStateException
-	  Parameter types-> 
-	   class java.lang.String
-	  Return type: int
 	  Modifiers: public
 	 METHOD
 	  Name: run

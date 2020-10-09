@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [LClassB;@545997b1
+Running Test: [LClassB;@4aa298b7
 Recursive: true
 CLASS
 Class: [LClassB;
@@ -408,6 +408,16 @@ Class: [LClassB;
 			METHODS ( InterfaceA )
 			Methods-> 
 			 METHOD
+			  Name: func2
+			  Exceptions-> 
+			   java.lang.Exception
+			   java.lang.ArithmeticException
+			   java.lang.IllegalMonitorStateException
+			  Parameter types-> 
+			   class java.lang.String
+			  Return type: int
+			  Modifiers: public abstract
+			 METHOD
 			  Name: func1
 			  Exceptions-> 
 			   java.lang.Exception
@@ -417,16 +427,6 @@ Class: [LClassB;
 			   boolean
 			   class java.lang.String
 			  Return type: void
-			  Modifiers: public abstract
-			 METHOD
-			  Name: func2
-			  Exceptions-> 
-			   java.lang.Exception
-			   java.lang.ArithmeticException
-			   java.lang.IllegalMonitorStateException
-			  Parameter types-> 
-			   class java.lang.String
-			  Return type: int
 			  Modifiers: public abstract
 			FIELDS ( InterfaceA )
 			Fields-> NONE
@@ -445,6 +445,27 @@ Class: [LClassB;
 		METHODS ( ClassC )
 		Methods-> 
 		 METHOD
+		  Name: func2
+		  Exceptions-> 
+		   java.lang.Exception
+		   java.lang.ArithmeticException
+		   java.lang.IllegalMonitorStateException
+		  Parameter types-> 
+		   class java.lang.String
+		  Return type: int
+		  Modifiers: public
+		 METHOD
+		  Name: func1
+		  Exceptions-> 
+		   java.lang.Exception
+		  Parameter types-> 
+		   int
+		   double
+		   boolean
+		   class java.lang.String
+		  Return type: void
+		  Modifiers: public
+		 METHOD
 		  Name: func3
 		  Exceptions-> NONE
 		  Parameter types-> 
@@ -459,27 +480,6 @@ Class: [LClassB;
 		   int
 		   boolean
 		  Return type: void
-		  Modifiers: public
-		 METHOD
-		  Name: func1
-		  Exceptions-> 
-		   java.lang.Exception
-		  Parameter types-> 
-		   int
-		   double
-		   boolean
-		   class java.lang.String
-		  Return type: void
-		  Modifiers: public
-		 METHOD
-		  Name: func2
-		  Exceptions-> 
-		   java.lang.Exception
-		   java.lang.ArithmeticException
-		   java.lang.IllegalMonitorStateException
-		  Parameter types-> 
-		   class java.lang.String
-		  Return type: int
 		  Modifiers: public
 		 METHOD
 		  Name: run
