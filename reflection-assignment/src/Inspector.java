@@ -47,7 +47,7 @@ public class Inspector {
     		for (Class i : interfaces) {
     			println(" INTERFACE -> Recursively Inspect");
     			println(" " + i.getName());
-    			inspectClass(i, null, recursive, depth+1);
+    			inspectClass(i, obj, recursive, depth+1);
     			this.depth = depth;
     		}
     	}
@@ -176,7 +176,27 @@ public class Inspector {
 							continue;
 						}
 						System.out.println();
+						
 						for (int i = 0; i < Array.getLength(value); i++) {
+							Object entry = Array.get(value, i);
+							
+							if (entry == null) {
+								println("  Value: " + entry);
+								continue;
+							}
+							
+							if (!valueClass.getComponentType().isPrimitive()) {
+								print("  Value (ref): ");
+								System.out.println(entry);
+								
+								if (recursive) {
+									println("    -> Recursively inspect");
+									inspectClass(entry.getClass(), entry, recursive, depth+1);
+									this.depth = depth;
+								}
+								continue;
+							}
+							
 							println("   Value: " + Array.get(value, i));
 						}
 						continue;
@@ -187,10 +207,11 @@ public class Inspector {
 						
 						print("  Value (ref): ");
 						System.out.println(value);
-						println("    -> Recursively inspect");
 						
 						if (recursive) {
+							println("    -> Recursively inspect");
 							inspectClass(valueClass, value, recursive, depth+1);
+							this.depth = depth;
 						}
 						continue;
 					}
