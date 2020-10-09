@@ -23,16 +23,13 @@ public class Inspector {
     	this.depth = depth;
     	
     	// Class Name
-    	println("CLASS");
-    	println("Class: " + c.getName());
+    	tabPrintln("CLASS");
+    	tabPrintln("Class: " + c.getName());
     	
     	if (c.isArray()) {
-    		// Component type
-			println(" Component Type: " + c.getComponentType());
-			// Length
-			println(" Length: " + Array.getLength(obj));
-			// Entries
-			print(" Entries-> ");
+			tabPrintln(" Component Type: " + c.getComponentType());
+			tabPrintln(" Length: " + Array.getLength(obj));
+			tabPrint(" Entries-> ");
 			if (Array.getLength(obj) == 0) {
 				System.out.println("NONE");
 				return;
@@ -43,23 +40,23 @@ public class Inspector {
 				Object entry = Array.get(obj, i);
 				
 				if (entry == null) {
-					println("  Value: " + entry);
+					tabPrintln("  Value: " + entry);
 					continue;
 				}
 				
 				if (!c.getComponentType().isPrimitive()) {
-					print("  Value (ref): ");
+					tabPrint("  Value (ref): ");
 					System.out.println(entry);
 					
 					if (recursive) {
-						println("    -> Recursively inspect");
+						tabPrintln("    -> Recursively inspect");
 						inspectClass(entry.getClass(), entry, recursive, depth+1);
 						this.depth = depth;
 					}
 					continue;
 				}
 				
-				println("   Value: " + Array.get(obj, i));
+				tabPrintln("   Value: " + Array.get(obj, i));
 			}
 			return;
     	}
@@ -67,15 +64,15 @@ public class Inspector {
     	// Immediate SuperClass
     	Class superclass = c.getSuperclass();
     	if (superclass != null) {
-    		println("SUPERCLASS -> Recursively Inspect");
-        	println("SuperClass: " + superclass.getName());
+    		tabPrintln("SUPERCLASS -> Recursively Inspect");
+        	tabPrintln("SuperClass: " + superclass.getName());
         	inspectClass(superclass, obj, recursive, depth+1);
         	this.depth = depth;
     	}
     	
     	// Interfaces
-    	println("INTERFACES ( " + c.getName() + " )");
-    	print("Interfaces-> ");
+    	tabPrintln("INTERFACES ( " + c.getName() + " )");
+    	tabPrint("Interfaces-> ");
     	Class[] interfaces = c.getInterfaces();
     	if (interfaces.length == 0) {
     		System.out.println("NONE");
@@ -83,16 +80,16 @@ public class Inspector {
     	else {
     		System.out.println();
     		for (Class i : interfaces) {
-    			println(" INTERFACE -> Recursively Inspect");
-    			println(" " + i.getName());
+    			tabPrintln(" INTERFACE -> Recursively Inspect");
+    			tabPrintln(" " + i.getName());
     			inspectClass(i, obj, recursive, depth+1);
     			this.depth = depth;
     		}
     	}
     	
     	// Constructors
-    	println("CONSTRUCTORS ( " + c.getName() + " )");
-    	print("Constructors-> ");
+    	tabPrintln("CONSTRUCTORS ( " + c.getName() + " )");
+    	tabPrint("Constructors-> ");
     	Constructor[] constructors = c.getDeclaredConstructors();
     	if (constructors.length == 0) {
     		System.out.println("NONE");
@@ -100,11 +97,11 @@ public class Inspector {
     	else {
     		System.out.println();
     		for (Constructor con : constructors) {
-    			println(" CONSTRUCTOR");
-    			println("  Name: " + con.getName());
+    			tabPrintln(" CONSTRUCTOR");
+    			tabPrintln("  Name: " + con.getName());
     			
     			// Parameter types
-    			print("  Parameter types-> ");
+    			tabPrint("  Parameter types-> ");
     			Parameter[] parameters = con.getParameters();
     			if (parameters.length == 0) { 
     				System.out.println("NONE");
@@ -112,20 +109,20 @@ public class Inspector {
     			else {
     				System.out.println();
     				for (Parameter p : parameters) {
-    					println("   " + p.getType());
+    					tabPrintln("   " + p.getType());
     				}
     			}
     			
     			// Modifiers
-    			print("  Modifiers: ");
+    			tabPrint("  Modifiers: ");
     			int modifiers = con.getModifiers();
     			System.out.println(Modifier.toString(modifiers));
     		}
     	}
     	
     	// Methods
-    	println("METHODS ( " + c.getName() + " )");
-    	print("Methods-> ");
+    	tabPrintln("METHODS ( " + c.getName() + " )");
+    	tabPrint("Methods-> ");
     	Method[] methods = c.getDeclaredMethods();
     	if (methods.length == 0) {
     		System.out.println("NONE");
@@ -133,11 +130,11 @@ public class Inspector {
     	else {
     		System.out.println();
     		for (Method m : methods) {
-    			println(" METHOD");
-    			println("  Name: " + m.getName());
+    			tabPrintln(" METHOD");
+    			tabPrintln("  Name: " + m.getName());
     			
     			// Exceptions
-    			print("  Exceptions-> ");
+    			tabPrint("  Exceptions-> ");
     			Class[] exceptions = m.getExceptionTypes();
     			if (exceptions.length == 0) {
     				System.out.println("NONE");
@@ -145,12 +142,12 @@ public class Inspector {
     			else {
     				System.out.println();
     				for (Class e : exceptions) {
-    					println("   "  + e.getName());
+    					tabPrintln("   "  + e.getName());
     				}
     			}
     			
     			// Parameter types
-    			print("  Parameter types-> ");
+    			tabPrint("  Parameter types-> ");
     			Parameter[] parameters = m.getParameters();
     			if (parameters.length == 0) { 
     				System.out.println("NONE");
@@ -158,23 +155,23 @@ public class Inspector {
     			else {
     				System.out.println();
     				for (Parameter p : parameters) {
-    					println("   " + p.getType());
+    					tabPrintln("   " + p.getType());
     				}
     			}
     			
     			// Return type
-    			println("  Return type: " + m.getReturnType());
+    			tabPrintln("  Return type: " + m.getReturnType());
     			
     			// Modifiers
-    			print("  Modifiers: ");
+    			tabPrint("  Modifiers: ");
     			int modifiers = m.getModifiers();
     			System.out.println(Modifier.toString(modifiers));
     		}
     	}
     	
     	// Fields
-    	println("FIELDS ( " + c.getName() + " )");
-    	print("Fields-> ");
+    	tabPrintln("FIELDS ( " + c.getName() + " )");
+    	tabPrint("Fields-> ");
     	Field[] fields = c.getDeclaredFields();
     	if (fields.length == 0) {
     		System.out.println("NONE");
@@ -182,12 +179,12 @@ public class Inspector {
     	else {
     		System.out.println();
     		for (Field f : fields) {
-    			println(" FIELD");
-    			println("  Name: " + f.getName());
-    			println("  Type: " + f.getType());
+    			tabPrintln(" FIELD");
+    			tabPrintln("  Name: " + f.getName());
+    			tabPrintln("  Type: " + f.getType());
     			
     			// Modifiers
-    			print("  Modifiers: ");
+    			tabPrint("  Modifiers: ");
     			int modifiers = f.getModifiers();
     			System.out.println(Modifier.toString(modifiers));
     			
@@ -196,7 +193,7 @@ public class Inspector {
     			try {
 					Object value = f.get(obj);
 					if (value == null) {
-						println("  Value: " + value);
+						tabPrintln("  Value: " + value);
 						continue;
 					}
 					Class valueClass = value.getClass();
@@ -204,11 +201,11 @@ public class Inspector {
 					// Check if value is an array
 					if (valueClass.isArray()) {
 						// Component type
-						println("  Component Type: " + valueClass.getComponentType());
+						tabPrintln("  Component Type: " + valueClass.getComponentType());
 						// Length
-						println("  Length: " + Array.getLength(value));
+						tabPrintln("  Length: " + Array.getLength(value));
 						// Entries
-						print("  Entries-> ");
+						tabPrint("  Entries-> ");
 						if (Array.getLength(value) == 0) {
 							System.out.println("NONE");
 							continue;
@@ -219,23 +216,23 @@ public class Inspector {
 							Object entry = Array.get(value, i);
 							
 							if (entry == null) {
-								println("  Value: " + entry);
+								tabPrintln("  Value: " + entry);
 								continue;
 							}
 							
 							if (!valueClass.getComponentType().isPrimitive()) {
-								print("  Value (ref): ");
+								tabPrint("  Value (ref): ");
 								System.out.println(entry);
 								
 								if (recursive) {
-									println("    -> Recursively inspect");
+									tabPrintln("    -> Recursively inspect");
 									inspectClass(entry.getClass(), entry, recursive, depth+1);
 									this.depth = depth;
 								}
 								continue;
 							}
 							
-							println("   Value: " + Array.get(value, i));
+							tabPrintln("   Value: " + Array.get(value, i));
 						}
 						continue;
 					}
@@ -243,18 +240,18 @@ public class Inspector {
 					// Check if value is a reference to an object and recurse
 					if (!f.getType().isPrimitive()) {
 						
-						print("  Value (ref): ");
+						tabPrint("  Value (ref): ");
 						System.out.println(value);
 						
 						if (recursive) {
-							println("    -> Recursively inspect");
+							tabPrintln("    -> Recursively inspect");
 							inspectClass(valueClass, value, recursive, depth+1);
 							this.depth = depth;
 						}
 						continue;
 					}
 					
-					print("  Value: ");
+					tabPrint("  Value: ");
 					System.out.println(value);
 					
 				} catch (IllegalArgumentException e) {
@@ -267,14 +264,14 @@ public class Inspector {
     	
     }
     
-    private void println(String string) {
+    private void tabPrintln(String string) {
     	for (int i = 0; i < depth; i++) {
     		System.out.print("\t");
     	}
     	System.out.println(string);
     }
     
-    private void print(String string) {
+    private void tabPrint(String string) {
     	for (int i = 0; i < depth; i++) {
     		System.out.print("\t");
     	}
