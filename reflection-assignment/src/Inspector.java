@@ -163,6 +163,7 @@ public class Inspector {
 					}
 					Class valueClass = value.getClass();
 					
+					// Check if value is an array
 					if (valueClass.isArray()) {
 						// Component type
 						println("  Component Type: " + valueClass.getComponentType());
