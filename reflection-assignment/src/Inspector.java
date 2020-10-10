@@ -28,38 +28,7 @@ public class Inspector {
     	
     	// Deal with array objects being passed in directly
     	if (c.isArray()) {
-			tabPrintln(" Component Type: " + c.getComponentType());
-			tabPrintln(" Length: " + Array.getLength(obj));
-			tabPrint(" Entries-> ");
-			if (Array.getLength(obj) == 0) {
-				System.out.println("NONE");
-				return;
-			}
-			
-			System.out.println();
-			
-			for (int i = 0; i < Array.getLength(obj); i++) {
-				Object entry = Array.get(obj, i);
-				
-				if (entry == null) {
-					tabPrintln("  Value: " + entry);
-					continue;
-				}
-				
-				if (!c.getComponentType().isPrimitive()) {
-					tabPrint("  Value (ref): ");
-					System.out.println(entry);
-					
-					if (recursive) {
-						tabPrintln("    -> Recursively inspect");
-						inspectClass(entry.getClass(), entry, recursive, depth+1);
-						this.depth = depth;
-					}
-					continue;
-				}
-				
-				tabPrintln("  Value: " + entry);
-			}
+			inspectArray(c, obj, recursive, depth);
 			return;
     	}
     	
@@ -98,6 +67,41 @@ public class Inspector {
     	// Fields
     	inspectFields(c, obj, recursive, depth);
     	
+    }
+    
+    private void inspectArray(Class c, Object obj, boolean recursive, int depth) {
+    	tabPrintln(" Component Type: " + c.getComponentType());
+		tabPrintln(" Length: " + Array.getLength(obj));
+		tabPrint(" Entries-> ");
+		if (Array.getLength(obj) == 0) {
+			System.out.println("NONE");
+			return;
+		}
+		
+		System.out.println();
+		
+		for (int i = 0; i < Array.getLength(obj); i++) {
+			Object entry = Array.get(obj, i);
+			
+			if (entry == null) {
+				tabPrintln("  Value: " + entry);
+				continue;
+			}
+			
+			if (!c.getComponentType().isPrimitive()) {
+				tabPrint("  Value (ref): ");
+				System.out.println(entry);
+				
+				if (recursive) {
+					tabPrintln("    -> Recursively inspect");
+					inspectClass(entry.getClass(), entry, recursive, depth+1);
+					this.depth = depth;
+				}
+				continue;
+			}
+			
+			tabPrintln("  Value: " + entry);
+		}
     }
     
     private void inspectConstructors(Class c) {
