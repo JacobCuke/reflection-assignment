@@ -88,37 +88,7 @@ public class Inspector {
     	}
     	
     	// Constructors
-    	tabPrintln("CONSTRUCTORS ( " + c.getName() + " )");
-    	tabPrint("Constructors-> ");
-    	Constructor[] constructors = c.getDeclaredConstructors();
-    	if (constructors.length == 0) {
-    		System.out.println("NONE");
-    	}
-    	else {
-    		System.out.println();
-    		for (Constructor con : constructors) {
-    			tabPrintln(" CONSTRUCTOR");
-    			tabPrintln("  Name: " + con.getName());
-    			
-    			// Parameter types
-    			tabPrint("  Parameter types-> ");
-    			Parameter[] parameters = con.getParameters();
-    			if (parameters.length == 0) { 
-    				System.out.println("NONE");
-    			}
-    			else {
-    				System.out.println();
-    				for (Parameter p : parameters) {
-    					tabPrintln("   " + p.getType());
-    				}
-    			}
-    			
-    			// Modifiers
-    			tabPrint("  Modifiers: ");
-    			int modifiers = con.getModifiers();
-    			System.out.println(Modifier.toString(modifiers));
-    		}
-    	}
+    	inspectConstructors(c);
     	
     	// Methods
     	tabPrintln("METHODS ( " + c.getName() + " )");
@@ -262,6 +232,40 @@ public class Inspector {
     		}
     	}
     	
+    }
+    
+    private void inspectConstructors(Class c) {
+    	tabPrintln("CONSTRUCTORS ( " + c.getName() + " )");
+    	tabPrint("Constructors-> ");
+    	Constructor[] constructors = c.getDeclaredConstructors();
+    	if (constructors.length == 0) {
+    		System.out.println("NONE");
+    	}
+    	else {
+    		System.out.println();
+    		for (Constructor con : constructors) {
+    			tabPrintln(" CONSTRUCTOR");
+    			tabPrintln("  Name: " + con.getName());
+    			
+    			// Parameter types
+    			tabPrint("  Parameter types-> ");
+    			Parameter[] parameters = con.getParameters();
+    			if (parameters.length == 0) { 
+    				System.out.println("NONE");
+    			}
+    			else {
+    				System.out.println();
+    				for (Parameter p : parameters) {
+    					tabPrintln("   " + p.getType());
+    				}
+    			}
+    			
+    			// Modifiers
+    			tabPrint("  Modifiers: ");
+    			int modifiers = con.getModifiers();
+    			System.out.println(Modifier.toString(modifiers));
+    		}
+    	}
     }
     
     private void tabPrintln(String string) {
