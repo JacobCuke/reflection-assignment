@@ -247,7 +247,7 @@ public class Inspector {
 								continue;
 							}
 							
-							tabPrintln("  Value: " + entry);
+							tabPrintln("   Value: " + entry);
 						}
 						continue;
 					}
