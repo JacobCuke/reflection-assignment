@@ -207,10 +207,13 @@ public class Inspector {
     			f.setAccessible(true);
     			try {
 					Object value = f.get(obj);
+					
+					// Handle null objects
 					if (value == null) {
 						tabPrintln("  Value: " + value);
 						continue;
 					}
+					
 					Class valueClass = value.getClass();
 					
 					// Check if value is an array
