@@ -408,6 +408,16 @@ Class: [LClassB;
 			METHODS ( InterfaceA )
 			Methods-> 
 			 METHOD
+			  Name: func2
+			  Exceptions-> 
+			   java.lang.Exception
+			   java.lang.ArithmeticException
+			   java.lang.IllegalMonitorStateException
+			  Parameter types-> 
+			   class java.lang.String
+			  Return type: int
+			  Modifiers: public abstract
+			 METHOD
 			  Name: func1
 			  Exceptions-> 
 			   java.lang.Exception
@@ -417,16 +427,6 @@ Class: [LClassB;
 			   boolean
 			   class java.lang.String
 			  Return type: void
-			  Modifiers: public abstract
-			 METHOD
-			  Name: func2
-			  Exceptions-> 
-			   java.lang.Exception
-			   java.lang.ArithmeticException
-			   java.lang.IllegalMonitorStateException
-			  Parameter types-> 
-			   class java.lang.String
-			  Return type: int
 			  Modifiers: public abstract
 			FIELDS ( InterfaceA )
 			Fields-> NONE
@@ -452,13 +452,14 @@ Class: [LClassB;
 		  Return type: void
 		  Modifiers: public abstract
 		 METHOD
-		  Name: func0
+		  Name: func2
 		  Exceptions-> 
 		   java.lang.Exception
+		   java.lang.ArithmeticException
+		   java.lang.IllegalMonitorStateException
 		  Parameter types-> 
-		   int
-		   boolean
-		  Return type: void
+		   class java.lang.String
+		  Return type: int
 		  Modifiers: public
 		 METHOD
 		  Name: func1
@@ -472,14 +473,13 @@ Class: [LClassB;
 		  Return type: void
 		  Modifiers: public
 		 METHOD
-		  Name: func2
+		  Name: func0
 		  Exceptions-> 
 		   java.lang.Exception
-		   java.lang.ArithmeticException
-		   java.lang.IllegalMonitorStateException
 		  Parameter types-> 
-		   class java.lang.String
-		  Return type: int
+		   int
+		   boolean
+		  Return type: void
 		  Modifiers: public
 		 METHOD
 		  Name: run
