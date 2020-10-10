@@ -94,7 +94,7 @@ public class Inspector {
     	inspectMethods(c);
     	
     	// Fields
-    	inspectFields(c, obj, recursive);
+    	inspectFields(c, obj, recursive, depth);
     	
     }
     
@@ -182,7 +182,7 @@ public class Inspector {
     	}
     }
     
-    private void inspectFields(Class c, Object obj, boolean recursive) {
+    private void inspectFields(Class c, Object obj, boolean recursive, int depth) {
     	tabPrintln("FIELDS ( " + c.getName() + " )");
     	tabPrint("Fields-> ");
     	Field[] fields = c.getDeclaredFields();
