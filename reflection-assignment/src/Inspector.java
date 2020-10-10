@@ -26,6 +26,7 @@ public class Inspector {
     	tabPrintln("CLASS");
     	tabPrintln("Class: " + c.getName());
     	
+    	// Deal with array objects being passed in directly
     	if (c.isArray()) {
 			tabPrintln(" Component Type: " + c.getComponentType());
 			tabPrintln(" Length: " + Array.getLength(obj));
@@ -34,6 +35,7 @@ public class Inspector {
 				System.out.println("NONE");
 				return;
 			}
+			
 			System.out.println();
 			
 			for (int i = 0; i < Array.getLength(obj); i++) {
@@ -56,7 +58,7 @@ public class Inspector {
 					continue;
 				}
 				
-				tabPrintln("   Value: " + Array.get(obj, i));
+				tabPrintln("  Value: " + entry);
 			}
 			return;
     	}
@@ -245,7 +247,7 @@ public class Inspector {
 								continue;
 							}
 							
-							tabPrintln("   Value: " + Array.get(value, i));
+							tabPrintln("  Value: " + entry);
 						}
 						continue;
 					}
