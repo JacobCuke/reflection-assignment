@@ -2,6 +2,8 @@
 
 All source code can be found in `reflection-assignment/src` and all output script text files in `reflection-assignment`.
 
+*Bonus code can be found in* `reflection-assignment/src/DriverBonus.java`
+
 ## Unit Testing
 
 I attempted to create unit tests for this assignment once I finished the project code, in order to make sure that any future refactorings I made would not mess up the output.
