@@ -5,8 +5,8 @@ public class DriverBonus {
 	public static void main(String[] args) {
 		
 		if (args.length != 3) {
-			System.out.println("Invalid arguments");
-			System.out.println("USAGE: java DriverBonus.java [Inspector Class] [Object Name] [Recursive (true/false)]");
+			System.err.println("Invalid # of arguments");
+			System.err.println("ARGUMENTS: [Inspector Class] [Object Name] [Recursive (true/false)]");
 			return;
 		}
 		
