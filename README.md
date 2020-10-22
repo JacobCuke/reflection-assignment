@@ -2,7 +2,7 @@
 
 All source code can be found in `reflection-assignment/src` and all output script text files in `reflection-assignment`.
 
-Bonus code can be found in `reflection-assignment/src/DriverBonus.java`
+*Bonus code can be found in* `reflection-assignment/src/DriverBonus.java`
 
 ## Unit Testing
 
