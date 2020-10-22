@@ -14,6 +14,7 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
+	  Exceptions-> NONE
 	  Parameter types-> NONE
 	  Modifiers: public
 	METHODS ( java.lang.Object )
@@ -137,10 +138,12 @@ CONSTRUCTORS ( ClassA )
 Constructors-> 
  CONSTRUCTOR
   Name: ClassA
+  Exceptions-> NONE
   Parameter types-> NONE
   Modifiers: public
  CONSTRUCTOR
   Name: ClassA
+  Exceptions-> NONE
   Parameter types-> 
    int
   Modifiers: public

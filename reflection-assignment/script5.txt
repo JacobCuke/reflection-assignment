@@ -14,6 +14,7 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
+	  Exceptions-> NONE
 	  Parameter types-> NONE
 	  Modifiers: public
 	METHODS ( java.lang.Object )
@@ -107,10 +108,12 @@ CONSTRUCTORS ( ClassD )
 Constructors-> 
  CONSTRUCTOR
   Name: ClassD
+  Exceptions-> NONE
   Parameter types-> NONE
   Modifiers: public
  CONSTRUCTOR
   Name: ClassD
+  Exceptions-> NONE
   Parameter types-> 
    int
   Modifiers: public
@@ -148,6 +151,7 @@ Fields->
 		Constructors-> 
 		 CONSTRUCTOR
 		  Name: java.lang.Object
+		  Exceptions-> NONE
 		  Parameter types-> NONE
 		  Modifiers: public
 		METHODS ( java.lang.Object )
@@ -271,10 +275,12 @@ Fields->
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: ClassA
+	  Exceptions-> NONE
 	  Parameter types-> NONE
 	  Modifiers: public
 	 CONSTRUCTOR
 	  Name: ClassA
+	  Exceptions-> NONE
 	  Parameter types-> 
 	   int
 	  Modifiers: public

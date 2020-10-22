@@ -14,6 +14,7 @@ SuperClass: java.lang.Object
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.Object
+	  Exceptions-> NONE
 	  Parameter types-> NONE
 	  Modifiers: public
 	METHODS ( java.lang.Object )
@@ -201,6 +202,7 @@ CONSTRUCTORS ( java.lang.String )
 Constructors-> 
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
    int
@@ -208,18 +210,22 @@ Constructors->
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
    class java.nio.charset.Charset
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> 
+   java.io.UnsupportedEncodingException
   Parameter types-> 
    class [B
    class java.lang.String
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
    int
@@ -228,6 +234,8 @@ Constructors->
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> 
+   java.io.UnsupportedEncodingException
   Parameter types-> 
    class [B
    int
@@ -236,27 +244,32 @@ Constructors->
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [C
    boolean
   Modifiers: 
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class java.lang.StringBuilder
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class java.lang.StringBuffer
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [I
    int
@@ -264,20 +277,24 @@ Constructors->
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> NONE
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [C
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class java.lang.String
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [C
    int
@@ -285,12 +302,14 @@ Constructors->
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
    int
   Modifiers: public
  CONSTRUCTOR
   Name: java.lang.String
+  Exceptions-> NONE
   Parameter types-> 
    class [B
    int
@@ -945,6 +964,7 @@ Fields->
 		Constructors-> 
 		 CONSTRUCTOR
 		  Name: java.lang.Object
+		  Exceptions-> NONE
 		  Parameter types-> NONE
 		  Modifiers: public
 		METHODS ( java.lang.Object )
@@ -1250,11 +1270,13 @@ Fields->
 	Constructors-> 
 	 CONSTRUCTOR
 	  Name: java.lang.String$CaseInsensitiveComparator
+	  Exceptions-> NONE
 	  Parameter types-> 
 	   class java.lang.String$1
 	  Modifiers: 
 	 CONSTRUCTOR
 	  Name: java.lang.String$CaseInsensitiveComparator
+	  Exceptions-> NONE
 	  Parameter types-> NONE
 	  Modifiers: private
 	METHODS ( java.lang.String$CaseInsensitiveComparator )

@@ -117,6 +117,19 @@ public class Inspector {
     			tabPrintln(" CONSTRUCTOR");
     			tabPrintln("  Name: " + con.getName());
     			
+    			// Exceptions
+    			tabPrint("  Exceptions-> ");
+    			Class[] exceptions = con.getExceptionTypes();
+    			if (exceptions.length == 0) {
+    				System.out.println("NONE");
+    			}
+    			else {
+    				System.out.println();
+    				for (Class e : exceptions) {
+    					tabPrintln("   "  + e.getName());
+    				}
+    			}
+    			
     			// Parameter types
     			tabPrint("  Parameter types-> ");
     			Parameter[] parameters = con.getParameters();
