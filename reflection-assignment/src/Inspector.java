@@ -90,7 +90,7 @@ public class Inspector {
 			
 			if (!c.getComponentType().isPrimitive()) {
 				tabPrint("  Value (ref): ");
-				System.out.println(entry);
+				System.out.println(entry.getClass().getName() + "@" + Integer.toHexString(entry.hashCode()));
 				
 				if (recursive) {
 					tabPrintln("    -> Recursively inspect");
@@ -251,13 +251,13 @@ public class Inspector {
 							Object entry = Array.get(value, i);
 							
 							if (entry == null) {
-								tabPrintln("  Value: " + entry);
+								tabPrintln("   Value: " + entry);
 								continue;
 							}
 							
 							if (!valueClass.getComponentType().isPrimitive()) {
-								tabPrint("  Value (ref): ");
-								System.out.println(entry);
+								tabPrint("   Value (ref): ");
+								System.out.println(entry.getClass().getName() + "@" + Integer.toHexString(entry.hashCode()));
 								
 								if (recursive) {
 									tabPrintln("    -> Recursively inspect");
@@ -276,7 +276,7 @@ public class Inspector {
 					if (!f.getType().isPrimitive()) {
 						
 						tabPrint("  Value (ref): ");
-						System.out.println(value);
+						System.out.println(value.getClass().getName() + "@" + Integer.toHexString(value.hashCode()));
 						
 						if (recursive) {
 							tabPrintln("    -> Recursively inspect");
