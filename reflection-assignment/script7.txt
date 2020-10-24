@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [LClassB;@4aa298b7
+Running Test: [LClassB;@14ae5a5
 Recursive: true
 CLASS
 Class: [LClassB;
@@ -10,7 +10,7 @@ Class: [LClassB;
   Value: null
   Value: null
   Value: null
-  Value (ref): ClassB
+  Value (ref): ClassB@7f31245a
     -> Recursively inspect
 	CLASS
 	Class: ClassB
@@ -155,7 +155,7 @@ Class: [LClassB;
 			  Name: val
 			  Type: class ClassA
 			  Modifiers: private
-			  Value (ref): ClassA
+			  Value (ref): ClassA@6d6f6e28
 			    -> Recursively inspect
 				CLASS
 				Class: ClassA
@@ -370,16 +370,16 @@ Class: [LClassB;
 			  Component Type: class ClassA
 			  Length: 10
 			  Entries-> 
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
-			  Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
+			   Value: null
 		INTERFACES ( ClassC )
 		Interfaces-> 
 		 INTERFACE -> Recursively Inspect
@@ -453,13 +453,6 @@ Class: [LClassB;
 		METHODS ( ClassC )
 		Methods-> 
 		 METHOD
-		  Name: func3
-		  Exceptions-> NONE
-		  Parameter types-> 
-		   int
-		  Return type: void
-		  Modifiers: public abstract
-		 METHOD
 		  Name: func0
 		  Exceptions-> 
 		   java.lang.Exception
@@ -490,6 +483,13 @@ Class: [LClassB;
 		  Return type: int
 		  Modifiers: public
 		 METHOD
+		  Name: func3
+		  Exceptions-> NONE
+		  Parameter types-> 
+		   int
+		  Return type: void
+		  Modifiers: public abstract
+		 METHOD
 		  Name: run
 		  Exceptions-> NONE
 		  Parameter types-> NONE
@@ -507,7 +507,7 @@ Class: [LClassB;
 		  Name: val2
 		  Type: class ClassA
 		  Modifiers: private
-		  Value (ref): ClassA
+		  Value (ref): ClassA@135fbaa4
 		    -> Recursively inspect
 			CLASS
 			Class: ClassA
@@ -709,7 +709,7 @@ Class: [LClassB;
 		  Name: val3
 		  Type: class ClassA
 		  Modifiers: private
-		  Value (ref): ClassA
+		  Value (ref): ClassA@45ee12a7
 		    -> Recursively inspect
 			CLASS
 			Class: ClassA
@@ -911,7 +911,7 @@ Class: [LClassB;
 		  Name: val4
 		  Type: class ClassA
 		  Modifiers: private
-		  Value (ref): ClassA
+		  Value (ref): ClassA@330bedb4
 		    -> Recursively inspect
 			CLASS
 			Class: ClassA
@@ -1164,7 +1164,7 @@ Class: [LClassB;
 	  Name: val
 	  Type: class ClassA
 	  Modifiers: private
-	  Value (ref): ClassA
+	  Value (ref): ClassA@2503dbd3
 	    -> Recursively inspect
 		CLASS
 		Class: ClassA
@@ -1366,7 +1366,7 @@ Class: [LClassB;
 	  Name: val2
 	  Type: class ClassA
 	  Modifiers: private
-	  Value (ref): ClassA
+	  Value (ref): ClassA@4b67cf4d
 	    -> Recursively inspect
 		CLASS
 		Class: ClassA

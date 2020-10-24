@@ -145,7 +145,7 @@ SuperClass: ClassC
 		  Name: val
 		  Type: class ClassA
 		  Modifiers: private
-		  Value (ref): ClassA
+		  Value (ref): ClassA@55f96302
 		    -> Recursively inspect
 			CLASS
 			Class: ClassA
@@ -360,16 +360,16 @@ SuperClass: ClassC
 		  Component Type: class ClassA
 		  Length: 10
 		  Entries-> 
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
-		  Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
+		   Value: null
 	INTERFACES ( ClassC )
 	Interfaces-> 
 	 INTERFACE -> Recursively Inspect
@@ -443,13 +443,6 @@ SuperClass: ClassC
 	METHODS ( ClassC )
 	Methods-> 
 	 METHOD
-	  Name: func3
-	  Exceptions-> NONE
-	  Parameter types-> 
-	   int
-	  Return type: void
-	  Modifiers: public abstract
-	 METHOD
 	  Name: func0
 	  Exceptions-> 
 	   java.lang.Exception
@@ -480,6 +473,13 @@ SuperClass: ClassC
 	  Return type: int
 	  Modifiers: public
 	 METHOD
+	  Name: func3
+	  Exceptions-> NONE
+	  Parameter types-> 
+	   int
+	  Return type: void
+	  Modifiers: public abstract
+	 METHOD
 	  Name: run
 	  Exceptions-> NONE
 	  Parameter types-> NONE
@@ -497,7 +497,7 @@ SuperClass: ClassC
 	  Name: val2
 	  Type: class ClassA
 	  Modifiers: private
-	  Value (ref): ClassA
+	  Value (ref): ClassA@232204a1
 	    -> Recursively inspect
 		CLASS
 		Class: ClassA
@@ -699,7 +699,7 @@ SuperClass: ClassC
 	  Name: val3
 	  Type: class ClassA
 	  Modifiers: private
-	  Value (ref): ClassA
+	  Value (ref): ClassA@4aa298b7
 	    -> Recursively inspect
 		CLASS
 		Class: ClassA
@@ -901,7 +901,7 @@ SuperClass: ClassC
 	  Name: val4
 	  Type: class ClassA
 	  Modifiers: private
-	  Value (ref): ClassA
+	  Value (ref): ClassA@7d4991ad
 	    -> Recursively inspect
 		CLASS
 		Class: ClassA
@@ -1154,7 +1154,7 @@ Fields->
   Name: val
   Type: class ClassA
   Modifiers: private
-  Value (ref): ClassA
+  Value (ref): ClassA@1b6d3586
     -> Recursively inspect
 	CLASS
 	Class: ClassA
@@ -1356,7 +1356,7 @@ Fields->
   Name: val2
   Type: class ClassA
   Modifiers: private
-  Value (ref): ClassA
+  Value (ref): ClassA@4554617c
     -> Recursively inspect
 	CLASS
 	Class: ClassA

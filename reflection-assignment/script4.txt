@@ -137,7 +137,7 @@ Fields->
   Name: val
   Type: class ClassA
   Modifiers: private
-  Value (ref): ClassA
+  Value (ref): ClassA@74a14482
     -> Recursively inspect
 	CLASS
 	Class: ClassA
@@ -352,14 +352,14 @@ Fields->
   Component Type: class ClassA
   Length: 10
   Entries-> 
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
-  Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
+   Value: null
 ======================================================
