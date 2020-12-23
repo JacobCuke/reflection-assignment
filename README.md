@@ -4,16 +4,6 @@ All source code can be found in `reflection-assignment/src` and all output scrip
 
 *Bonus code can be found in* `reflection-assignment/src/DriverBonus.java`
 
-## Unit Testing
-
-I attempted to create unit tests for this assignment once I finished the project code, in order to make sure that any future refactorings I made would not mess up the output.
-
-Once I finished the code and everything was working as it should, I made two copies of each script text file, one using recursion and one without, and placed them in a separate folder. My test was to run the same code provided in main of `Driver.java` and compare the content of the resulting script files to the copied files, to make sure that as I refactored I did not mess up any of the output files.
-
-Unfortunately, I soon realised that when Java loops through the methods of a class, it does not always do so in the same order. Because of this I found it practically impossible to obtain a definitive output file to test my program against, as the program would output the results in a different order each time.
-
-Because of this I decided to forego unit testing, and instead had to check the output files myself using GitLab to check for differences in the text files, to make sure they were still producing the correct output.
-
 ## Refactoring
 
 ### Worrisome Comments
