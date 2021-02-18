@@ -1,4 +1,4 @@
-# CPSC 501 Assignment 2 - Reflection
+# Reflection Assignment
 
 All source code can be found in `reflection-assignment/src` and all output script text files in `reflection-assignment`.
 
